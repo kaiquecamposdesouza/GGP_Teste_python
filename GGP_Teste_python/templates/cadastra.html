@@ -1,0 +1,18 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<form action="{{ url_for('cadastra') }}" method="POST">
+    <div class="form-container">
+      <label for="descricao">Descrição</label>
+      <input type="text" class="form-control" id="descricao" name="descricao">
+    </div>
+    <div class="form-container">
+      <label for="valor">Valor</label>
+      <input type="text" class="form-control" id="valor" name="valor">
+    </div>
+    <div class="form-container">
+        <label for="quantidade">Quantidade</label>
+        <input type="text" class="form-control" id="quantidade" name="quantidade">
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+  </form>
+{% endblock %}  
